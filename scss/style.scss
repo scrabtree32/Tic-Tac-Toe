@@ -1,0 +1,104 @@
+$text-color: #737373;
+
+body {
+  background-color: black;
+  font-family: 'Roboto-Mono', monospace;
+}
+.container {
+  margin-top: 8%;
+  @media only screen and (max-height: 800px) {
+    margin-top: 0%;
+  }
+}
+.title {
+  text-align: center;
+  color: $text-color;
+}
+.align {
+  width: 400px;
+  margin: auto;
+}
+.topbar {
+  height: 60px;
+  color: $text-color;
+}
+.border {
+  background-image: url("https://parameter-9fcd.kxcdn.com/wp-content/uploads/2017/06/Free-HQ-Wood-Texture.jpg");
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border-radius: 1%;
+}
+.bigBox {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  position: relative;
+}
+button {
+  border-radius: 6%;
+  background-color: rgba(0, 0, 0, 0);
+  color: $text-color;
+  border: 1px solid $text-color;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.disable {
+  pointer-events: none;
+}
+%card-shared {
+  background-image: url("http://www.grandmamaes.com/wp-content/themes/theme45687_new/light-wood.jpg");
+  position: absolute;
+  margin: 25px auto;
+  font-size: 25px;
+  padding-top: 20%;
+}
+%card-all {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.card1 {
+  @extend %card-shared;
+  @extend %card-all;
+
+}
+.card2, .card4 {
+  @extend %card-shared;
+  @extend %card-all;
+
+}
+.card3 {
+  @extend %card-all;
+  background-color: rgba(0, 0, 0, 0);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 110px 110px 110px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  padding-top: 25px;
+}
+.reset {
+  position: absolute;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  font-size: 100px;
+  background-image: url("http://www.grandmamaes.com/wp-content/themes/theme45687_new/light-wood.jpg");
+  border-radius: 5%;
+  color: black;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
